@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure the gradient covers the entire viewport height */
+  background: linear-gradient(135deg, #ff6b6b, #56c8d8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif; /* Use a commonly available font */
+}
+
+/* General reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Countdown Timer styles */
+.CountDownTimer {
+  max-width: 400px; /* Limit the width for better readability */
+  width: 100%;
+  background-color: #efdcdc; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.CountDownTimer h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3498db; /* Adjusted to match the gradient */
+}
+
+.CountDownTimer h1 span {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8e44ad; /* Adjusted to match the gradient */
+}
+
+.CountDownTimer input[type="datetime-local"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none; /* Remove outline on focus */
+}
+
+.CountDownTimer .buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.CountDownTimer .buttons button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.CountDownTimer .buttons button:hover {
+  background-color: #0056b3;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically center the counters */
+}
+
+.CountDownTimer .counter div {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ff6b6b, #56c8d8);
+}
+
+.CountDownTimer .counter span {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* White text color */
+}
+
+.CountDownTimer .counter label {
+  font-size: 14px;
+  color: #555; /* Dimmer text color */
+}
